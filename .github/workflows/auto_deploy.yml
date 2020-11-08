@@ -31,5 +31,5 @@ jobs:
         run: npm install --global surge
       
       - name: Deploying Using Surge
-        run: surge ./ bcamp2020_assignment1.surge.sh ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ bcamp2020_assignment1.surge.sh --token ${{ secrets.SURGE_TOKEN }}
       
